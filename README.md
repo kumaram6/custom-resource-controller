@@ -1,5 +1,50 @@
 
+# Pre-Requisite
+- ### RKE2 Kubernetes cluster 
+- ### Containerization
+- ### Container orchestration
+- ### Kubernetes architecture
+- ### Kubernetes built-in resources
+    - **Pod**: The smallest and simplest Kubernetes object. It represents a single instance of a running process in your cluster.
 
+    - **ReplicaSet**: Ensures that a specified number of pod replicas are running at any given time.
+
+    - **Deployment**: Provides declarative updates to Pods and ReplicaSets. It manages the deployment of applications across your cluster.
+
+        - **StatefulSet**: Manages the deployment and scaling of a set of Pods, and provides guarantees about the ordering and uniqueness of these Pods.
+
+        - **DaemonSet**: Ensures that all (or some) nodes run a copy of a Pod. Useful for deploying system daemons such as log collectors, monitoring agents, etc.
+
+    - **Job**: Runs a containerized task to completion. It's useful for batch processing, cron jobs, or one-off tasks.
+
+    - **CronJob**: A scheduler for Jobs. It creates Jobs at a specified time or interval, similar to cron in Unix-like systems.
+
+    - **Service**: Exposes a set of Pods as a network service with a stable IP address and DNS name. It enables communication between different parts of your application.
+
+    - **Ingress**: Manages external access to services in a cluster, typically HTTP.
+
+    - **Secret**: Stores sensitive information such as passwords, OAuth tokens, and SSH keys securely in the cluster.
+
+    - **ConfigMap**: Stores configuration data in key-value pairs that can be consumed by Pods or other resources.
+
+    - **Namespace**: Provides a way to divide cluster resources between multiple users or teams.
+
+    - **ServiceAccount**: Provides an identity for processes that run in a Pod. It's used by Kubernetes to control access to cluster resources.
+
+    - **PersistentVolume**: Represents a piece of storage in the cluster that has been provisioned by an administrator.
+
+    - **PersistentVolumeClaim**: A request for storage by a user. It's used to claim a PersistentVolume for use by a Pod.
+
+    - **StorageClass**: Provides a way for administrators to describe different classes of storage and the provisioner that implements it.
+
+    - **Role**: Defines a set of permissions within a namespace.
+
+    - **ClusterRole**: Defines a set of permissions across the entire cluster.
+
+    - **RoleBinding**: Binds a Role to a user or group within a namespace.
+
+    - **ClusterRoleBinding**: Binds a ClusterRole to a user or group across the entire cluster.
+    
 # Install kubebuilder
     
     arch=amd64
