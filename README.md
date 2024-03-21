@@ -25,7 +25,7 @@
 # write custom logic for your controller
 - ## Add fields of your custom-resource in api/v1/pdfdocument_types.go
     - ### Add custome rsource fileds to this struct:
-        ![alt text](image.png)
+        ![alt text](images/image.png)
     - ### Full code
             /*
             Copyright 2024.
@@ -96,7 +96,7 @@
 
 - ## Write your logic inside reconcile method in controllers/pdfdocument_controller.go
     - ### Add your logic to Reconcile method according to your applicaton need
-        ![alt text](image-1.png)
+        ![alt text](images/image-1.png)
     - ### Full code
             /*
             Copyright 2024.
