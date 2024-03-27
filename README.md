@@ -366,7 +366,7 @@
 # Execute custom-resource-controller
     make run
 # Create custom-resource
-- ## Content of resource manifest file (config/samples/k8s.startkubernetes.com_v1_pdfdocument.yaml)
+- ## Content of resource manifest file (config/samples/k8s.startkubernetes.com_v2_pdfdocument.yaml)
         apiVersion: k8s.startkubernetes.com.k8s.startkubernetes.com/v2
         kind: PdfDocument
         metadata:
@@ -378,5 +378,5 @@
             hello **world**!
 
 -   ## Command to create custom resource object
-        kubectl apply -f config/samples/k8s.startkubernetes.com_v1_pdfdocument.yaml
+        kubectl apply -f config/samples/k8s.startkubernetes.com_v2_pdfdocument.yaml
 
