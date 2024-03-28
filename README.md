@@ -48,13 +48,8 @@
 # Install kubebuilder
     
     arch=amd64
-
-    // # download the release
     curl -L -O https://storage.googleapis.com/kubebuilder-release/kubebuilder_master_linux_${arch}.tar.gz
-
-    // # extract the archive
     tar -zxvf kubebuilder_master_linux_${arch}.tar.gz
-
     sudo mkdir -p /usr/local/kubebuilder/bin
     sudo mv kubebuilder /usr/local/kubebuilder/bin
     export PATH=$PATH:/usr/local/kubebuilder/bin
