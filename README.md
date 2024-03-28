@@ -297,7 +297,7 @@
 - ## command to generate custom-resource-defination
        make manifests
 - ## Content of custom-resource-defination
-       ---
+        ---
         apiVersion: apiextensions.k8s.io/v1
         kind: CustomResourceDefinition
         metadata:
@@ -363,15 +363,15 @@
     make run
 # Create custom-resource
 - ## Content of resource manifest file (config/samples/k8s.startkubernetes.com_v2_pdfdocument.yaml)
-    apiVersion: k8s.startkubernetes.com.k8s.startkubernetes.com/v2
-    kind: PdfDocument
-    metadata:
-      name: pdfdocument-sample
-    spec:
-      documentName: my-text
-      text: |
-        ##my document
-        hello **world**!
+        apiVersion: k8s.startkubernetes.com.k8s.startkubernetes.com/v2
+        kind: PdfDocument
+        metadata:
+          name: pdfdocument-sample
+        spec:
+          documentName: my-text
+          text: |
+            ##my document
+            hello **world**!
 
 -   ## Command to create custom resource object
         kubectl apply -f config/samples/k8s.startkubernetes.com_v2_pdfdocument.yaml
