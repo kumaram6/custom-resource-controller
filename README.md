@@ -58,6 +58,7 @@
 
     sudo mkdir -p pdf-controller
     cd pdf-controller
+    sudo chmod 777 -R .
     go mod init k8s.startkubernetes.com/v2
     kubebuilder init --domain k8s.startkubernetes.com
     kubebuilder create api --group k8s.startkubernetes.com --version v2 --kind PdfDocument
