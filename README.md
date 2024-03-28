@@ -376,5 +376,5 @@
 -   ## Command to create custom resource object
         kubectl apply -f config/samples/k8s.startkubernetes.com_v2_pdfdocument.yaml
 -   ## Command to get pdf file
-        kubectl cp $(kubectl get pods | grep -i my-document | awk '{print $1}'):/data/my-text.pdf my-pdf.pdf
+        kubectl cp $(kubectl get pods | grep -i pdfdocument | awk '{print $1}'):/data/my-text.pdf my-pdf.pdf
 
